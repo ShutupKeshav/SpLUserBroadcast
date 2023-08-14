@@ -1,11 +1,13 @@
 from pyrogram import Client
 import time
+import os
 import asyncio
 
 try:
     from vars import vars
 except:
-    print("ENV Vars not defined, Run 'python3 env.py' to define !")
+    print("ENV Vars not defined, Running 'python3 env.py' to define !")
+    os.system('python3 env.py')
 
 app = Client(
     api_id=vars['API_ID'],
