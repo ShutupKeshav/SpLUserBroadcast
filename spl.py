@@ -1,4 +1,4 @@
-from alphagram import Alpha
+from pyrogram import Client
 import time
 import asyncio
 
@@ -7,7 +7,7 @@ try:
 except:
     print("ENV Vars not defined, Run 'python3 env.py' to define !")
 
-app: Alpha = Alpha(
+app = Client(
     api_id=vars['API_ID'],
     api_hash=vars['API_HASH'],
     session_string=vars['STRING_SESSION']
