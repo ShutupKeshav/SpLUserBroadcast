@@ -1,1 +1,1 @@
-alphagram
+git+https://github.com/shutupkeshav/alphagram
