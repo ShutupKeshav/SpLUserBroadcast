@@ -1,4 +1,4 @@
-from pyrogram import Client
+from alphagram import Alpha
 import time
 import os
 import asyncio
@@ -10,7 +10,7 @@ except:
     os.system('python3 env.py')
     from vars import vars
 
-app = Client(
+app = Alpha(
     ':SpL:',
     api_id=vars['API_ID'],
     api_hash=vars['API_HASH'],
