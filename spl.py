@@ -8,6 +8,7 @@ try:
 except:
     print("ENV Vars not defined, Running 'python3 env.py' to define !")
     os.system('python3 env.py')
+    from vars import vars
 
 app = Client(
     api_id=vars['API_ID'],
