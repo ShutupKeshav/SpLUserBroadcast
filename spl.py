@@ -11,6 +11,7 @@ except:
     from vars import vars
 
 app = Client(
+    ':SpL:',
     api_id=vars['API_ID'],
     api_hash=vars['API_HASH'],
     session_string=vars['STRING_SESSION']
